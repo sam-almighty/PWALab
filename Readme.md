@@ -1,4 +1,4 @@
-###Engage your mobile users with Progressive Web Apps built on IBM Bluemix
+### Engage your mobile users with Progressive Web Apps built on IBM Bluemix
 
 In this lab, you will learn how to
 
@@ -7,17 +7,17 @@ In this lab, you will learn how to
 * Make your web app into a Progressive Web App
 * Interact with a backend service from within your mobile and web app using IBM Mobile Foundation
 
-####Pre-requisites
+#### Pre-requisites
 1. A Bluemix Account - Create one at [https://console.bluemix.net/] (https://console.bluemix.net/) 
 2. Bluemix CLI - Download from [here](https://clis.ng.bluemix.net/ui/home.html)
 3. Node.js Runtime - Download from [here](https://nodejs.org/en/download/)
 
-####Setup 
-#####1. Install Cordova 
+#### Setup 
+##### 1. Install Cordova 
 
 > 	npm install -g cordova
 
-#####2. Set up your Bluemix Command line 
+##### 2. Set up your Bluemix Command line 
 
 First set the region and Bluemix endpoint
 > bluemix api https://api.ng.bluemix.net
@@ -28,7 +28,7 @@ Login to your IBM Bluemix account using the following command
 
 
 
-####Create your mobile and web app
+#### Create your mobile and web app
 
 Download the MobileFirst sample app
 > md C:\ISTC2017 
@@ -86,7 +86,7 @@ Navigate to the cordova browser project folder
 Copy the contents to `C:\ISTC2017\get-started-node\views`
 
 
-####Make your app a PWA
+#### Make your app a PWA
 In this lab, we will demonstrate two of the multi-faceted capabilities of progressive web apps.
 
 1. Serving content offline 
@@ -175,7 +175,7 @@ You can now access your web app from the home screen of a device just like a nat
 
 Additionally, meeting certain criteria, browsers automatically prompt users to add your web app to the home screen. 
 
-####Let your PWA do the work - access a mobile backend
+#### Let your PWA do the work - access a mobile backend
 
 For this section, we will use IBM Mobile Foundation on Bluemix as your mobile gateway. For convenience, we have already setup a Mobile Foundation instance with the necessary adapters deployed. Adapters are server side code that will fetch data from a backend and provide it to the mobile app or web app. 
 
@@ -260,5 +260,4 @@ The above code is needed so that your web app knows where to redirect MobileFirs
 
 Push your changes to Bluemix again 
 > bluemix app push < appname >
-
 
