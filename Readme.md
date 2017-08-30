@@ -267,3 +267,20 @@ The above code is needed so that your web app knows where to redirect MobileFirs
 Push your changes to Bluemix again 
 > bluemix app push < appname >
 
+Now, if you click on the `Get Balance` button, the app will connect to an IBM Mobile Foundation instance running on IBM Bluemix which will fetch data from a backend. 
+
+#### Conclusion:
+In this lab, you have learnt how to write an app with common code for mobile and the web. 
+You also learnt how to make your web app a progressive web app and how to leverage the robustness of your mobile infrastructure to serve mobile web apps as well
+
+
+#### Annexure:
+** Setting up IBM Mobile Foundation
+
+* Login to your Bluemix account 
+* Go to Catalog -> Web and Mobile -> IBM Mobile Foundation 
+* Create an instance of IBM Mobile Foundation 
+* Login to the MobileFirst console
+* Create a new Application - provide a name, select Web as the platform and `com.sample.pincodecordova` as the application ID
+* Build and deploy the sample adapters from https://github.com/MobileFirst-Platform-Developer-Center/PinCodeCordova
+
