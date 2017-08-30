@@ -8,7 +8,7 @@ In this lab, you will learn how to
 * Interact with a backend service from within your mobile and web app using IBM Mobile Foundation
 
 #### Pre-requisites
-1. A Bluemix Account - Create one at [https://console.bluemix.net/] (https://console.bluemix.net/) 
+1. A Bluemix Account - Create one at [here](https://console.bluemix.net/) 
 2. Bluemix CLI - Download from [here](https://clis.ng.bluemix.net/ui/home.html)
 3. Node.js Runtime - Download from [here](https://nodejs.org/en/download/)
 
