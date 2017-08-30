@@ -25,7 +25,7 @@ First set the region and Bluemix endpoint
 Login to your IBM Bluemix account using the following command
 > bluemix login -u < username > -o < organization > -s < space >
 
-
+You can get the space and organization from the top right corner of the bluemix console
 
 
 #### Create your mobile and web app
@@ -59,7 +59,7 @@ Preview your app
 
 This will open a new browser window with your web app's UI. This is the same UI that will be available on a Android/iOS/Windows app as well. 
 
-####Hosting your app on IBM Bluemix
+#### Hosting your app on IBM Bluemix
 After you've created your app and previewed it locally, its time to take it to the cloud. IBM Bluemix provides a Node.js runtime. Let us now host your web app on the Node.js runtime. 
 
 1. Login to your Bluemix account. Go to [https://bluemix.net](https://bluemix.net) 
@@ -84,7 +84,10 @@ Navigate to the cordova browser project folder
 > cd c:\ISTC2017\PinCodeCordova\platforms\browser\www
 
 Copy the contents to `C:\ISTC2017\get-started-node\views`
+With these changes, push your new app to Bluemix to ensure the changes are reflected.
+>bluemix app push < appname >
 
+Open your app in a browser using the same url as earlier and you will see the PinCode app is now live. 
 
 #### Make your app a PWA
 In this lab, we will demonstrate two of the multi-faceted capabilities of progressive web apps.
@@ -100,6 +103,8 @@ Let us now add a service worker to our web app.
 
 
 Navigate to the `C:\ISTC2017\get-started-node\views` folder and create a new file here called `service-worker.js`
+
+**Note: Ensure the file is saved as a js file and not a text file**
 
 Add the following content to it
 
@@ -151,7 +156,7 @@ self.addEventListener('fetch', function(e) {
   );
 });
 ```
-Add the following code to your `index.html`
+Add the following code to your `index.html` within the `<head>` tag
 
 ```
 <script type="text/javascript">
@@ -166,12 +171,13 @@ This will ensure that your browser is compatible with HTML5 service workers and 
 With these changes, push your new app to Bluemix
 >bluemix app push < appname >
 
+You can now test the offline capabilities of your PWA by switiching off the internet and accessing your web app through the browser. 
 
 **Access your app from the home screen**
 
 Open the web app from a mobile browser (Chrome / Firefox / Opera) . Click on the settings menu and choose 'Add to Home Screen'
 
-You can now access your web app from the home screen of a device just like a native app. 
+You can now access your web app from the home screen of a device just like a native app. You can also further verify the offline capabilities by switching off the internet on the mobile and accesing the app.
 
 Additionally, meeting certain criteria, browsers automatically prompt users to add your web app to the home screen. 
 
